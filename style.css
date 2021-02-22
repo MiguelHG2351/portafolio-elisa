@@ -1,10 +1,27 @@
+img {
+    max-width: 100%;
+}
+
+input,
+textarea {
+    outline: none;
+}
+
 body {
     margin: 0;
-    background-image: linear-gradient(135deg, #FAD7A1, #E96D71);
+    background-image: linear-gradient(135deg, #fad7a1 0%, #e96d71 100%);
+}
+
+#proyectos {
+    scroll-behavior: smooth;
+}
+
+#hablemos {
+    scroll-behavior: smooth;
 }
 
 :root {
-    --primary: #42E2B8;
+    --primary: #42e2b8;
     --black: #000;
 }
 
@@ -31,19 +48,23 @@ main {
     font-weight: 900;
 }
 
+.header-nav {
+    display: none;
+}
+
 .btn.curriculum {
     width: 151px;
     height: 49px;
     font-style: normal;
     font-weight: bold;
     letter-spacing: 1.25px;
-    background-color: #42E2B8;
+    background-color: #42e2b8;
     border: 2px solid #000;
     text-transform: uppercase;
     font-family: "Oxigen", sans-serif;
     font-size: 14px;
     border-radius: 22px;
-    color: #0F0A0A;
+    color: #0f0a0a;
     text-align: center;
     filter: drop-shadow(-4px 4px 14px rgba(0, 0, 0, 0.25));
 }
@@ -52,14 +73,20 @@ main {
     font-family: "Oxygen";
 }
 
-.header-info h3 {
+.hero-content h3 {
     font-size: 48px;
     margin: 0 0 26px 0;
 }
 
-.header-info h1 {
+.hero-content h1 {
     font-size: 59px;
     margin: 0 0 0 0;
+    text-align: left;
+}
+
+.hero-description p {
+    font-size: 16px;
+    font-weight: 400;
     text-align: left;
 }
 
@@ -77,4 +104,281 @@ main {
 
 .social-icon img {
     vertical-align: middle;
+}
+
+.content + .content {
+    margin-top: 40px;
+}
+
+.content.init p {
+    letter-spacing: 0.5;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    text-align: center;
+    line-height: 38.83px;
+}
+
+.content.init h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    line-height: 38.83px;
+}
+
+/* [class*="project-"] {
+    background-color: red;
+} */
+
+.title-project {
+    display: inline-block;
+    background-color: #000;
+    box-shadow: -4px 4px #fff;
+}
+
+.title-project a {
+    display: inline-block;
+    color: var(--primary);
+    text-decoration: none;
+    padding: 14px;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.btn-project {
+    cursor: pointer;
+    outline: none;
+    display: block;
+    width: -webkit-fill-available;
+    width: -moz-fill-available;
+    width: 100%;
+    border-radius: 24px;
+    border: 1px solid #000;
+    height: 49px;
+    margin: 22px 0;
+    font-weight: 700;
+    font-size: 14px;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+    /* User Agents for firefox */
+    padding: 0;
+    transition: transform 0.22s ease;
+}
+
+.btn-project:hover {
+    transform: scale(0.95);
+}
+
+.btn-project i {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.btn-project span {
+    display: inline-block;
+    font-family: "Oxygen", sans-serif;
+    vertical-align: middle;
+    text-rendering: optimizeSpeed;
+}
+
+.btn-project.github {
+    background-color: transparent;
+}
+
+.btn-project.live {
+    box-shadow: -4px 4px 14px 0 rgba(0, 0, 0, 0.25);
+    background-color: var(--primary);
+}
+
+[class*="referencia-"] {
+    padding: 24px;
+    margin: 82px 0;
+    border: 3px solid #fff;
+    border-radius: 12px;
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(39px);
+}
+
+.description-reference {
+    font-weight: 700;
+}
+
+.footer-reference {
+    font-weight: 400;
+    color: #815e55;
+    font-size: 12px;
+}
+
+.form > div label {
+    display: block;
+    max-width: 100%;
+    padding-left: 12px;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.form > div + div {
+    margin: 25px 0;
+}
+
+.form-text input {
+    display: block;
+    margin-top: 12px;
+    padding: 14px;
+    box-sizing: border-box;
+    width: 100%;
+    border-radius: 12px;
+    border: 1px solid #000;
+    font-size: 16px;
+}
+
+.form-area textarea {
+    box-sizing: border-box;
+    margin-top: 12px;
+    width: 100%;
+    height: 134px;
+    border-radius: 12px;
+}
+
+footer {
+    margin-top: 100px;
+}
+
+.owner {
+    display: none;
+}
+
+.end {
+    font-family: "Oxygen", sans-serif;
+    margin-top: 12px;
+}
+
+.end p {
+    margin: 8px 0;
+    text-align: center;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+@media screen and (min-width: 768px) {
+    main {
+        padding: 37px 128px 0 128px;
+    }
+
+    .content {
+        margin-top: 100px;
+    }
+    
+    .header-nav {
+        display: block;
+    }
+
+    .header-nav-list {
+        padding-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0 40px;
+    }
+
+    .list-item {
+        list-style: none;
+    }
+
+    .header-nav-list li:first-child a {
+        color: #000;
+    }
+
+    .list-item a {
+        font-family: "Oxygen";
+        text-decoration: none;
+        color: #815e55;
+        font-weight: 700;
+    }
+
+    .hero-content {
+        display: grid;
+        grid-template-areas: "description image";
+        grid-template-columns: 1fr 1fr;
+        height: 604px;
+        align-items: flex-start;
+        grid-gap: 0 20px;
+    }
+
+    .hero-description {
+        grid-area: description;
+        text-align: left;
+    }
+
+    .hero-image {
+        grid-area: image;
+    }
+
+    .hero-image {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .contact p {
+        text-decoration: underline;
+        cursor: pointer;
+    }
+
+    .contact p i {
+        padding-right: 10px;
+    }
+
+    [class*="project-"] {
+        display: grid;
+        grid-template-areas: "content image";
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 0 50px;
+    }
+
+    .preview-project {
+        grid-area: image;
+    }
+
+    .content {
+        grid-area: content;
+    }
+
+    .description-reference {
+        font-size: 34px;
+    }
+
+    .footer-reference {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    footer {
+        display: flex;
+        justify-content: space-between;
+        display: grid;
+        grid-template-areas: "title content social";
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+    }
+
+    .owner {
+        display: block;
+        font-family: "Poppins", sans-serif;
+        font-weight: 900;
+        font-size: 24px;
+        grid-area: title;
+    }
+
+    .end {
+        grid-area: content;
+    }
+    
+    .social.footer {
+        display: block;
+        grid-area: social;
+    }
 }

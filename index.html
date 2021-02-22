@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="style.css" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
-            href="https://fonts.googleapis.com/css2?family=Oxygen:wght@700&display=swap"
+            href="https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap"
             rel="stylesheet"
         />
         <link
@@ -22,19 +22,32 @@
                 <div class="header-title">
                     <h2>Logo</h2>
                 </div>
+                <nav class="header-nav">
+                    <ul class="header-nav-list">
+                        <li class="list-item"><a href="#">Hola</a></li>
+                        <li class="list-item"><a href="#proyectos">Proyectos</a></li>
+                        <li class="list-item"><a href="#hablemos">Hablemos</a></li>
+                    </ul>
+                </nav>
                 <div class="curriculum">
                     <button class="btn curriculum">Currículum</button>
                 </div>
             </header>
             <section class="content">
-                <div align="center" class="header-info">
-                    <img src="assets/images/person.png" alt="Foto de Elisa" />
-                    <h3>¡Hola a todos!</h3>
-                    <h1>Soy Elisa</h1>
-                    <p>
-                        Una Frontend Developer que le encanta implementar
-                        diseños que inspiran y atraen a las personas
-                    </p>
+                <div align="center" class="hero-content">
+                    <img class="hero-image" src="assets/images/person.png" alt="Foto de Elisa" />
+                    <div class="hero-description">
+                        <h3>¡Hola a todos!</h3>
+                        <h1>Soy Elisa</h1>
+                        <p>
+                            Una Frontend Developer que le encanta implementar
+                            diseños que inspiran y atraen a las personas
+                        </p>
+                        <div class="contact">
+                            <p><i><img src="assets/images/icon-phone.svg" alt="icono phone"></i>(629) 555-0129</p>
+                            <p><i><img src="assets/images/icon-important_mail.svg" alt="icono email"></i>elisa@gmail.com</p>
+                        </div>
+                    </div>
                     <div class="social" align="left">
                         <i class="social-icon">
                             <img
@@ -63,39 +76,51 @@
                     </div>
                 </div>
             </section>
-            <section class="content">
+            <section class="content init">
                 <p>
                     A lo largo de mi carrera como FrontEnd, he tenido el
                     privilegio de trabajar en proyectos retadores o increíbles
                 </p>
                 <h3>Aquí hay algunos que me gustaría compartir</h3>
-                <img
-                    src="assets/images/arrow-down.svg"
-                    alt="flecha hacia abajo"
-                />
-                <img
-                    src="assets/images/desktop-phone-preview.png"
-                    alt="La mejor página para aprender frontend"
-                />
+                <div align="center">
+                    <img
+                        src="assets/images/arrow-down.svg"
+                        alt="flecha hacia abajo"
+                    />
+                </div>
             </section>
-            <section class="content">
-                <a href="https://leonidasesteban.com/">leonidasesteban.com</a>
-                <p>
-                    Accede a más de 120 proyectos que te ayudarán a mejorar tus
-                    habilidades como desarrollador Front-End.
-                </p>
-                <div class="code">
-                    <button>
-                        <i>
-                            <img src="assets/images/github-icon.svg" alt="" />
-                        </i>
-                        Ver código
-                    </button>
-                    <button>Ver Proyecto</button>
+            <section class="content" id="proyectos">
+                <div class="project-1">
+                    <div class="preview-project">
+                        <img
+                        src="assets/images/desktop-phone-preview.png"
+                        alt="La mejor página para aprender frontend"
+                        />
+                    </div>
+                    <div class="content-project">
+                        <div class="title-project">
+                            <a href="https://leonidasesteban.com/">leonidasesteban.com</a>
+                        </div>
+                        <div class="description-project">
+                            <p>
+                                Accede a más de 120 proyectos que te ayudarán a mejorar tus
+                                habilidades como desarrollador Front-End.
+                            </p>
+                        </div>
+                        <div class="code">
+                            <button class="btn-project github">
+                                <i>
+                                    <img src="assets/images/github-icon.svg" alt="" />
+                                </i>
+                                    Ver código
+                            </button>
+                            <button class="btn-project live">Ver Proyecto</button>
+                        </div>
+                    </div>
                 </div>
                 <div class="referencias">
                     <div class="referencia-1">
-                        <div class="user">
+                        <div class="user" align="center">
                             <img
                                 src="assets/images/leonidas.png"
                                 alt="Leonidas Esteban"
@@ -116,33 +141,38 @@
                             </p>
                         </div>
                     </div>
-                    <div class="project-1">
+                    <div class="project-2">
                         <div class="preview-project">
                             <img
                                 src="assets/images/IPad-preview.png"
                                 alt="Proyecto en !Pad"
                             />
                         </div>
-                        <div class="title-proyect">
-                            <p>Marvol</p>
+                        <div class="content">
+                            <div class="title-project">
+                                <a href="https://marvol.com">Marvol</a>
+                            </div>
+                            <div class="description-project">
+                                <p>
+                                    Es el sitio oficial de Marvol Entertainment. Explore
+                                    películas, personajes, cómics, programas de
+                                    televisión, videos y más oficiales de Marvol.
+                                </p>
+                            </div>
+                            <div class="code">
+                                <button class="btn-project github">
+                                    <i>
+                                        <img
+                                            src="assets/images/github-icon.svg"
+                                            alt=""
+                                        />
+                                    </i>
+                                    Ver código
+                                </button>
+                                <button class="btn-project live">Ver Proyecto</button>
+                            </div>
                         </div>
-                        <div class="description-project">
-                            Es el sitio oficial de Marvol Entertainment. Explore
-                            películas, personajes, cómics, programas de
-                            televisión, videos y más oficiales de Marvol.
-                        </div>
-                        <div class="code">
-                            <button>
-                                <i>
-                                    <img
-                                        src="assets/images/github-icon.svg"
-                                        alt=""
-                                    />
-                                </i>
-                                Ver código
-                            </button>
-                            <button>Ver Proyecto</button>
-                        </div>
+                    </div>
                         <div class="referencia-2">
                             <div class="user">
                                 <img
@@ -160,34 +190,36 @@
                                 <p>JASON LOPEZ / COFUNDADOR Y CEO MARVOL</p>
                             </div>
                         </div>
-                        <div class="project-2">
+                        <div class="project-3">
                             <div class="preview-project">
                                 <img
                                     src="assets/images/marvol.png"
                                     alt="Marvol project"
                                 />
                             </div>
-                            <div class="title-project">
-                                <p>Marvol</p>
-                            </div>
-                            <div class="description-project">
-                                <p>
-                                    Películas y series ilimitadas y mucho más.
-                                    Disfruta donde quieras. Cancela cuando
-                                    quieras.
-                                </p>
-                            </div>
-                            <div class="code">
-                                <button>
-                                    <i>
-                                        <img
-                                            src="assets/images/github-icon.svg"
-                                            alt=""
-                                        />
-                                    </i>
-                                    Ver código
-                                </button>
-                                <button>Ver Proyecto</button>
+                            <div class="content">
+                                <div class="title-project">
+                                    <a href="https://netnet.com">NetNet</a>
+                                </div>
+                                <div class="description-project">
+                                    <p>
+                                        Películas y series ilimitadas y mucho más.
+                                        Disfruta donde quieras. Cancela cuando
+                                        quieras.
+                                    </p>
+                                </div>
+                                <div class="code">
+                                    <button class="btn-project github">
+                                        <i>
+                                            <img
+                                                src="assets/images/github-icon.svg"
+                                                alt=""
+                                            />
+                                        </i>
+                                            Ver código
+                                    </button>
+                                    <button class="btn-project live">Ver Proyecto</button>
+                                </div>
                             </div>
                         </div>
                         <div class="referencia-3">
@@ -211,30 +243,50 @@
                     </div>
                 </div>
             </section>
-            <section class="content contact">
+            <section class="content contact" id="hablemos">
+                <div class="title-project">
+                    <a href="mailto:abc@gmail.com">
+                        Hablemos
+                    </a>
+                </div>
                 <p>
                     Si está interesado en trabajar conmigo en su próximo
                     proyecto, no dude en ponerse en contacto conmigo.
                 </p>
-                <form>
-                    <label for="name"></label>
-                    <input type="text" id="name" placeholder="Juan" />
+                <form class="form" id="form">
 
-                    <label for="email"></label>
-                    <input
-                        type="text"
-                        id="email"
-                        placeholder="Juan@gmail.com"
-                    />
+                    <div class="form-text">
+                        <label for="name">Nombre Completo</label>
+                        <input name="name" type="text" id="name" placeholder="Juan" required/>
+                    </div>
 
-                    <label for="textArea"></label>
-                    <textarea id="textArea" placeholder="Juan@gmail.com">
-                    </textarea>
-                    <button class="btn send">Enviar mensaje</button>
+                    <div class="form-text">
+                        <label for="email">Correo electronico</label>
+                        <input
+                            name="email"
+                            type="email"
+                            id="email"
+                            placeholder="Juan@gmail.com"
+                            required
+                        />
+                    </div>
+
+                    <div class="form-area">
+                        <label for="textArea">Mensaje</label>
+                        <textarea name="message" id="textArea" placeholder="Juan@gmail.com" required>
+                        </textarea>
+                    </div>
+                    <div class="form-send">
+                        <button class="btn-project live">Enviar mensaje</button>
+                    </div>
+                    <a id="trucazo" href="mailto:miguelhernanadezgaitan13@gmail.com" style="opacity: 0;">ejejej</a>
                 </form>
             </section>
             <footer>
-                <div class="social" align="left">
+                <div class="owner">
+                    <h2>LOGO</h2>
+                </div>
+                <div class="social footer" align="center">
                     <i class="social-icon">
                         <img
                             src="assets/images/icon-phone.svg"
@@ -260,9 +312,24 @@
                         />
                     </i>
                 </div>
-                <p>Hecho con 🖤 de Elisa</p>
-                <p>Copyright 2021 - Todos los derechos reservados.</p>
+                <div class="end">
+                    <p>Hecho con 🖤 de Elisa</p>
+                    <p>Copyright 2021 - Todos los derechos reservados.</p>
+                </div>
             </footer>
         </main>
+        <script>
+            const $form = document.getElementById('form')
+
+            $form.addEventListener('submit', handleSubmit)
+
+            function handleSubmit(event) {
+                event.preventDefault()
+                const form = new FormData(this)
+                console.log(form.get('name'))
+                trucazo.setAttribute('href', `mailto:miguelhernandezgaitan13@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
+                trucazo.click()
+            }
+        </script>
     </body>
 </html>
