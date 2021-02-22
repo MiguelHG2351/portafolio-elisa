@@ -19,3 +19,12 @@ En el render pasa a ser
 # Crea un repo facilmente
 
 [Crea un repo](https://repo.new)
+
+# Centrar una imagen y texto
+
+```css
+i {
+    display: inline-block;
+    vertical-align: middle;
+}
+```
